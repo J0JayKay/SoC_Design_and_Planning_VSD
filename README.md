@@ -25,7 +25,7 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane
 docker
 ```
 
-3. Now that we have entered the shell of the container, we run openLANE. OpenLANE can be run in two modes: autonomous or interactive. we run openLANE flow in interactive mode by running the script:
+3. Now that we have entered the shell of the container, we run openLANE. OpenLANE can be run in two modes: autonomous or interactive. we run openLANE in interactive mode by running the script:
 
 ```
 ./flow.tcl -interactive
