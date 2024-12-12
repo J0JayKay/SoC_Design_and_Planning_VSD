@@ -11,7 +11,16 @@ This is my repo for the VSD course [Digital VLSI SoC Design](https://vsdsquadron
 <details>
 <summary> <h3>Labs</h3> </summary>
 <details>
-<summary> <h4>Day 1</h4> </summary>
+<summary> <h4>Day 1 - Calculate Flop-Ratio of Design</h4> </summary>
+The task given for day 1 is to calculate the flop-ratio of an existing design. For this, the design (a verilog design) has to be prepared and synthesized. Topics learned:
+  
+* OpenLANE directory structure
+* Running OpenLANE
+* Synthesizing designs with OpenLANE
+
+&nbsp;
+
+<h4>Steps</h4>
 
 1. The directory containing OpenLANE is cd'ed to, using the command: 
 
@@ -25,7 +34,7 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane
 docker
 ```
 
-3. Now that we have entered the shell of the container, we run openLANE. OpenLANE can be run in two modes: autonomous or interactive. we run openLANE in interactive mode by running the script:
+3. Now that we have entered the shell of the container, we run openLANE. OpenLANE can be run in two modes: autonomous or interactive. Interactive lets you go step-by-step, autonomous automates the intermediary steps. We run openLANE in interactive mode here by running the script:
 ```
 ./flow.tcl -interactive
 ```
@@ -40,6 +49,30 @@ package require openlane 0.9
 &ensp; The process till now:
 <p align="center">
   <img src="images/lab_shots/1.png">
+</p>
+
+5. The workshop begins from synthesis. An existing design, PicoRV32A, from the openLANE designs folder is to be synthesized. For this to be done, the data is to be "prepared" first. OpenLANE expects the required files in specific locations. This filesystem is created from the design using the command:
+```tcl
+prep -design picorv32a
+```
+
+This creates a new folder titled 'runs' in the picorv32a folder with the required file structure and file formats.
+<p align="center">
+  <img src="images/lab_shots/2.png">
+  The preparation step.
+</p>
+<p align="center">
+  <img src="images/lab_shots/3.png">
+  The newly created folder and its subfolders.
+</p>
+
+ 6. Now, the design is ready to be synthesized. The following command runs both Yosys and ABC on the design:
+```tcl
+run_synthesis
+```
+<p align="center">
+  <img src="images/lab_shots/4.png">
+  The newly created folder and its subfolders.
 </p>
 
 </details>
