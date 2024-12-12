@@ -13,7 +13,7 @@ This is my repo for the VSD course [Digital VLSI SoC Design](https://vsdsquadron
 <details>
 <summary> <h4>Section 1</h4> </summary>
 
-1. The directory containing OpenLane is cd'ed to, using the command: 
+1. The directory containing OpenLANE is cd'ed to, using the command: 
 
 ```bash
 cd ~/Desktop/work/tools/openlane_working_dir/openlane
@@ -30,12 +30,12 @@ docker
 ```
 ./flow.tcl -interactive
 ```
-This opens a tcl shell that accepts tcl commands.
+  This opens a tcl shell that accepts tcl commands.
 
 4. Required package is loaded with the tcl command:
 
 ```tcl
-package require 0.9
+package require openlane 0.9
 ```
 </details>
 
