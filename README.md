@@ -36,7 +36,9 @@ docker
 ```tcl
 package require openlane 0.9
 ```
-![A screenshot of the terminal of the process till now]()
+
+&ensp; &ensp; &ensp;  The process till now:
+&ensp; &ensp; &ensp;  ![A screenshot of the terminal of the process till now](images/lab_shots/1.png)
 
 </details>
 
