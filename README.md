@@ -37,8 +37,8 @@ docker
 package require openlane 0.9
 ```
 
-&ensp; &ensp; &ensp;  The process till now:
-&ensp; &ensp; &ensp;  ![A screenshot of the terminal of the process till now](images/lab_shots/1.png)
+&ensp; The process till now:
+&ensp;&ensp;  ![A screenshot of the terminal of the process till now](images/lab_shots/1.png)
 
 </details>
 
