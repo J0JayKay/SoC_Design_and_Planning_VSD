@@ -11,7 +11,7 @@ This is my repo for the VSD course [Digital VLSI SoC Design](https://vsdsquadron
 <details>
 <summary> <h3>Labs</h3> </summary>
 <details>
-<summary> <h4>Section 1</h4> </summary>
+<summary> <h4>Day 1</h4> </summary>
 
 1. The directory containing OpenLANE is cd'ed to, using the command: 
 
@@ -26,17 +26,18 @@ docker
 ```
 
 3. Now that we have entered the shell of the container, we run openLANE. OpenLANE can be run in two modes: autonomous or interactive. we run openLANE in interactive mode by running the script:
-
 ```
 ./flow.tcl -interactive
 ```
-  This opens a tcl shell that accepts tcl commands.
+&ensp; &ensp; &ensp; This opens a tcl shell that accepts tcl commands.
 
 4. Required package is loaded with the tcl command:
 
 ```tcl
 package require openlane 0.9
 ```
+![A screenshot of the terminal of the process till now]()
+
 </details>
 
 </details>
