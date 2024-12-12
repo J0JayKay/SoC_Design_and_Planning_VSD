@@ -38,7 +38,9 @@ package require openlane 0.9
 ```
 
 &ensp; The process till now:
-&ensp;&ensp;  ![A screenshot of the terminal of the process till now](images/lab_shots/1.png)
+<p align="center">
+  <img src="images/lab_shots/1.png">
+</p>
 
 </details>
 
