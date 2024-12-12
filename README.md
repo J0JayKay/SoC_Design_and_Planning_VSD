@@ -46,24 +46,24 @@ docker
 package require openlane 0.9
 ```
 
-&ensp; The process till now:
 <p align="center">
   <img src="images/lab_shots/1.png">
+  4.1 The terminal with the commands till now.
 </p>
 
-5. The workshop begins from synthesis. An existing design, PicoRV32A, from the openLANE designs folder is to be synthesized. For this to be done, the data is to be "prepared" first. OpenLANE expects the required files in specific locations. This filesystem is created from the design using the command:
+5. Synthesis is to be done next. An existing design, PicoRV32A, from the openLANE designs folder is to be synthesized. For this to be done, the data is to be "prepared" first. OpenLANE expects the required files in specific locations. This filesystem is created from the design using the command:
 ```tcl
 prep -design picorv32a
 ```
 
-This creates a new folder titled 'runs' in the picorv32a folder with the required file structure and file formats.
+&ensp; &ensp; &ensp; This creates a new folder titled 'runs' in the picorv32a folder with the required file structure and file formats.
 <p align="center">
   <img src="images/lab_shots/2.png">
-  The preparation step.
+  5.1 The preparation step.
 </p>
 <p align="center">
   <img src="images/lab_shots/3.png">
-  The newly created folder and its subfolders.
+  5.2 The newly created folder and its subfolders.
 </p>
 
  6. Now, the design is ready to be synthesized. The following command runs both Yosys and ABC on the design:
@@ -72,11 +72,26 @@ run_synthesis
 ```
 <p align="center">
   <img src="images/lab_shots/4.png">
-  The newly created folder and its subfolders.
+  6.1 Successful synthesis.
 </p>
 
-</details>
+7. Successful synthesis generates a netlist and various reports in the '<openlane>/designs/picor32va/' 
 
+<p align="center">
+  <img src="images/lab_shots/5.png">
+  6.2 The generated results.
+</p>
+
+<p align="center">
+  <img src="images/lab_shots/6.png">
+  6.3 The cell counts, dfxtp_2 represents DFF.
+</p>
+
+Here, the number of cells is 14,876 and the number of DFF cells is 1613. Hence, the flop ratio is:
+```math
+{No._of_DFF_cells\over Total_no._of_cells}= \frac{1613}{14876} = 0.108429685
+```
+</details>
 </details>
 
 
