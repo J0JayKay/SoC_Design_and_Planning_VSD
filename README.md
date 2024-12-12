@@ -84,9 +84,9 @@ run_synthesis
 
 <p align="center">
   <img src="images/lab_shots/6.png">
-   $\color{#D9C4EC}{6.3\ The\ cell\ counts,\ dfxtp_2\ represents\ DFF.}$
+   $\color{#D9C4EC}{6.3\ The\ cell\ counts,\ dfxtp\_2\ represents\ DFF.}$
 </p>
-<br />
+<br \>
 Here, the number of cells is 14,876 and the number of DFF cells is 1613. Hence, the flop ratio is:
 
 ```math
