@@ -89,7 +89,7 @@ run_synthesis
 
 Here, the number of cells is 14,876 and the number of DFF cells is 1613. Hence, the flop ratio is:
 ```math
-{No._of_DFF_cells\over Total_no._of_cells}= \frac{1613}{14876} = 0.108429685
+{No. of DFF cells\over Total no. of &nbsp; cells}= \frac{1613}{14876} = 0.108429685
 ```
 </details>
 </details>
