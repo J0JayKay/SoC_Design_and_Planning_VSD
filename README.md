@@ -18,6 +18,7 @@ The task given for day 1 is to calculate the flop-ratio of an existing design. F
 * Running OpenLANE
 * Synthesizing designs with OpenLANE
 
+
 &nbsp;
 
 <h4>Steps</h4>
@@ -86,12 +87,10 @@ run_synthesis
   <img src="images/lab_shots/6.png">
    $\color{#D9C4EC}{6.3\ The\ cell\ counts,\ dfxtp\_2\ represents\ DFF.}$
 </p>
-<br \>
-Here, the number of cells is 14,876 and the number of DFF cells is 1613. Hence, the flop ratio is:
+<br \>Here, the number of cells is 14,876 and the number of DFF cells is 1613. Hence, the flop ratio is: <br \>
 
-```math
-{No.\ of\ DFF\ cells\over Total\ no.\ of\ cells}= \frac{1613}{14876} = 0.108429685
-```
+$${No.\ of\ DFF\ cells\over Total\ no.\ of\ cells} = \frac{1613}{14876} = 0.108429685$$
+
 </details>
 </details>
 
